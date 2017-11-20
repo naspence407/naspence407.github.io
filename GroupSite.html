@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+<!-- Merina Gray Home Page-->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Bootstrap Example</title>
@@ -13,24 +14,33 @@
       border-radius: 0;
      
         }
-        .nav navbar-nav {
 
-
+        #navLinks li a {
+        left: 60px;
+        padding-right: 40px;
         }
+
+        .navbar-nav li a{
+         line-height: 85px;
+         font-size: 24px;
+         color: #0094ff;
+        }
+
         #Logo {
             color: #0094ff;
             font-family: 'Monotype Corsiva';
-            font-size:32px;
+            font-size:30px;
         }
         #Logo2 {
             color:darkorange;
-            font-size:32px;
+            font-size:30px;
         }
 
       .carousel-inner img {
-      width: 100%; /* Set width to 100% */
+      width: 80%; /* Set width to 100% */
       margin: auto;
       min-height:200px;
+      max-height: 650px;
         }
 
   /* Hide the carousel text when the screen is less than 600 pixels wide */
@@ -54,7 +64,7 @@
                 <div class="navbar-text" id="Logo">Merina Gray <div id="Logo2">Homeless Ministry</div></div>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="navLinks">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Projects</a></li>
@@ -72,12 +82,14 @@
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="https://placehold.it/1200x400?text=IMAGE" alt="Image">
+                <img src="MerinaGray.png" alt="Image">
                 <div class="carousel-caption">
                     <h3>Sell $</h3>
                     <p>Money Money.</p>
@@ -85,12 +97,25 @@
             </div>
 
             <div class="item">
-                <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
+                <img src="trunk.png" alt="Image">
                 <div class="carousel-caption">
                     <h3>More Sell $</h3>
                     <p>Lorem ipsum...</p>
                 </div>
             </div>
+
+            <div class="item">
+                <img src="line.png" alt="Image">
+                <div class="carousel-caption">
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="shave.png" alt="Image">
+                <div class="carousel-caption">
+                </div>
+            </div>
+
         </div>
 
         <!-- Left and right controls -->
